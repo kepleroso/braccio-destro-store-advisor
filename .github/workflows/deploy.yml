@@ -1,8 +1,10 @@
-# Pubblica il plugin su WordPress.org (SVN) quando si crea un tag di versione, es. 1.0.0
+# Pubblica il plugin su WordPress.org (SVN) quando cambia il codice del plugin sul ramo main.
+# La versione caricata è quella scritta in VERSION (deve coincidere con "Version" e "Stable tag").
 name: Pubblica su WordPress.org
 on:
   push:
-    tags: ['*']
+    branches: [main]
+    paths: ['braccio-destro-store-advisor.php', 'readme.txt', '.github/workflows/deploy.yml']
   workflow_dispatch:
 jobs:
   deploy:
