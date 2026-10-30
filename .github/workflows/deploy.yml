@@ -4,7 +4,7 @@ name: Pubblica su WordPress.org
 on:
   push:
     branches: [main]
-    paths: ['braccio-destro-store-advisor.php', 'readme.txt', '.github/workflows/deploy.yml']
+    paths: ['braccio-destro-store-advisor.php', 'readme.txt', '.github/workflows/deploy.yml', '.wordpress-org/**']
   workflow_dispatch:
 jobs:
   deploy:
