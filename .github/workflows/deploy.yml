@@ -12,7 +12,7 @@ jobs:
       - name: Carica su SVN
         uses: 10up/action-wordpress-plugin-deploy@stable
         env:
-          SVN_USERNAME: ${{ secrets.SVN_USERNAME }}
+          SVN_USERNAME: ceotrust
           SVN_PASSWORD: ${{ secrets.SVN_PASSWORD }}
           SLUG: braccio-destro-store-advisor
           VERSION: '1.0.0'
